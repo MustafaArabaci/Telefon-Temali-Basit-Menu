@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+   background-image: linear-gradient(155deg, #9aa58d 0, #9ba286 5.56%, #9b9e7f 11.11%, #9b9978 16.67%, #9b926f 22.22%, #9b8b66 27.78%, #9a835c 33.33%, #997a52 38.89%, #987048 44.44%, #97653f 50%, #955937 55.56%, #944e33 61.11%, #934330 66.67%, #923730 72.22%, #902c33 77.78%, #8e2136 83.33%, #8c163c 88.89%, #890b42 94.44%, #850349 100%);
+   background-blend-mode: multiply, multiply;
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin: 0;
+ }
+ 
+ .telefon {
+   position: relative;
+   border: 3px solid #000000;
+   box-shadow: rgba(0, 0, 0, 0.4) 5px 10px 10px 10px;
+   border-radius: 20px;
+   height: 720px;
+   width: 360px;
+ }
+ 
+ .telefon .content {
+   border-radius: 16px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   height:100%;   
+   width: 100%;
+   opacity: 0;
+   transition: opacity 0.4s ease;
+ }
+ 
+ .telefon .content.about {
+   background-image: url(komik\ kedi.jpg);
+}
+ .telefon .content.blog {
+   background-image: url(kedi.jpg);
+ }
+ 
+ .telefon .content.map {
+   background-image: url(cat.jpg);
+ }
+ 
+ .telefon .content.contact {
+   background-image: url(cady.jpg);
+ }
+ 
+ .telefon .content.show {
+   opacity: 1;
+ }
+ 
+ .telefon .content .text {
+   background: rgba(0, 0, 0, 0.7);
+   color: #ffffff;
+   padding: 60px 15px;
+   border-radius: 15px;
+ }
+ 
+ nav {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   margin-top: -5px;
+   width: 100%;
+ }
+ 
+ nav ul {
+   background-color: #000000;
+   color: #ffffff;
+   list-style-type: none;
+   display: flex;
+   margin: 0;
+   padding: 0;
+   height: 60px;
+ }
+ 
+ nav li {
+   cursor: pointer;
+   flex: 1;
+   padding: 10px;
+   text-align: center;
+ }
+ 
+ nav ul li p {
+   font-size: 12px;
+   margin: 2px 0;
+ }
+ 
+ nav ul li:hover,
+ nav ul li.active {
+   color: #ff2640;
+ }
